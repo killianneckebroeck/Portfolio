@@ -1,0 +1,217 @@
+/* Algemene styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Hoofdkleur van de pagina */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #F5A623;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #7ED321;
+}
+
+/* Sectie styling */
+section {
+    padding: 30px; /* Verhoogd voor meer ruimte */
+    margin: 20px 0;
+    background-color: #f4f4f4; /* Houd de achtergrondkleur consistent */
+    border-radius: 8px; /* Ronde hoeken voor een mooi effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4A90E2;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Projecten styling */
+.project {
+    background-color: #e2e2e2; /* Achtergrondkleur van de projectcontainer */
+    border: 1px solid #ddd; /* Subtiele rand */
+    padding: 15px; /* Voldoende padding */
+    margin: 10px 0; /* Ruimte tussen projecten */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Voor vloeiende overgang */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Beweeg het project naar boven */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Verhoogde schaduw bij hover */
+    background-color: #d0d0d0; /* Donkere tint voor hover-effect */
+    border-color: #4A90E2;
+}
+
+.project h3 {
+    margin-top: 0; /* Zorg ervoor dat er geen extra ruimte boven de titel is */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling voor de over-mij sectie */
+.about-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius:8px;
+}
+
+/* Styling voor de profielfoto */
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Vaardigheden sectie */
+#skills {
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    margin: 20px 0;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left; /* Zorg ervoor dat de titel links uitgelijnd is */
+}
+
+/* Skills list styling */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Zorg ervoor dat er geen marges zijn */
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: flex-start; /* Zorg ervoor dat de items links uitgelijnd zijn */
+}
+
+.skills-list img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.skills-list li:hover {
+    background-color: #e6e6e6; /* Achtergrondkleur veranderen bij hover */
+    border-radius: 5px; /* Randen afronden */
+    transition: background-color 0.3s; /* Vloeiende overgang */
+}
+
+.logo {
+    width: 50px; /* Pas de breedte aan zoals nodig */
+    height: auto; /* Houd de hoogte automatisch in verhouding */
+    margin-left: 10px; /* Voeg wat ruimte toe tussen de titel en het logo */
+    vertical-align: middle; /* Zorg ervoor dat het logo mooi uitgelijnd is met de tekst */
+}
+
+/* Algemene knop styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Ruimte rondom de tekst */
+    margin: 10px 5px; /* Ruimte tussen de knoppen */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Ronde hoeken */
+    text-align: center; /* Tekst centreren */
+    text-decoration: none; /* Geen onderstreping */
+    font-size: 1.1rem; /* Grotere tekst */
+    color: white; /* Tekstkleur */
+    transition: background-color 0.3s, transform 0.3s; /* Vloeiende overgang voor hover-effect */
+}
+
+/* LinkedIn knop styling */
+.linkedin-button {
+    background-color: #0077B5; /* LinkedIn kleur */
+}
+
+.linkedin-button:hover {
+    background-color: #005582; /* Donkerdere tint voor hover-effect */
+    transform: translateY(-2px); /* Beweeg omhoog bij hover */
+}
+
+/* CV knop styling */
+.cv-button {
+    background-color: #4A90E2; /* Blauw kleur voor CV knop */
+}
+
+.cv-button:hover {
+    background-color: #357ABD; /* Donkerdere tint voor hover-effect */
+    transform: translateY(-2px); /* Beweeg omhoog bij hover */
+}
+
+/* Knoppen container styling */
+.button-container {
+    text-align: center; /* Centreer de knoppen */
+    margin-top: 20px; /* Ruimte boven de knoppen */
+}
