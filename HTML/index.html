@@ -11,31 +11,35 @@
             <h1>Killian Neckebroeck</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">Over Mij</a></li>
-                    <li><a href="#skills">Vaardigheden</a></li>
-                    <li><a href="#projects">Projecten</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" id="navAbout">Over Mij</a></li>
+                    <li><a href="#skills" id="navSkills">Vaardigheden</a></li>
+                    <li><a href="#projects" id="navProjects">Projecten</a></li>
+                    <li><a href="#contact" id="navContact">Contact</a></li>
                 </ul>
+                <!-- <div class="language-switcher">
+                    <button class="lang-btn" onclick="changeLanguage('nl')">🇳🇱 NL</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">🇬🇧 ENG</button>
+                </div>                 -->
             </nav>
         </header>
 
         <section id="about">
-            <h2>Over Mij</h2>
+            <h2 id="aboutTitle">Over Mij</h2>
             <div class="about-container"></div>
                 <img src="/IMAGES/Killian Neckebroeck foto.jpg" alt="Killian Neckebroeck" class="profile-img">
-                <p>
+                <p id="aboutText1">
                     Hallo, ik ben <strong>Killian Neckebroeck</strong>, een derdejaarsstudent Toegepaste Informatica aan HoGent in Aalst. Al van jongs af aan heb ik een fascinatie gehad voor technologie en hoe deze kan worden ingezet om het leven gemakkelijker en efficiënter te maken. Gedurende mijn opleiding heb ik mezelf steeds meer verdiept in de functionele kant van IT en bedrijfsprocessen, wat ertoe heeft geleid dat ik het keuze traject <strong>Functional & Business Analist</strong> heb gekozen.
                 </p>
-                <p>
+                <p id="aboutText2">
                     Ik vind het interessant hoe software en technologieën kunnen worden gebruikt om bedrijfsprocessen te verbeteren en om zo oplossingen te analyseren, te optimaliseren en ervoor te zorgen dat IT-oplossingen precies aansluiten bij de behoeften van bedrijven.
                 </p>
-                <P>
+                <P id="aboutText3">
                     Naast mijn passie voor IT en bedrijfsprocessen, ben ik ook iemand die veel tijd besteedt aan sport. Fitness speelt een belangrijke rol in mijn dagelijks leven. Ik geniet ervan om mezelf uit te dagen, doelen te stellen en steeds te verbeteren - een mentaliteit die ik ook meeneem in mijn werk en studie.
                 </P>
-                <p>
+                <p id="aboutText3">
                     In mijn vrije tijd ben ik ook een fan van racegames, waarbij ik houd van de adrenaline en de uitdaging van precisie en snelheid. Daarnaast kijk ik graag naar Formule 1, waar ik de strategische aspecten van het racen bijzonder interessant vind. Ik volg ook voetbal met veel plezier, omdat het me ontspanning biedt en een manier is om mijn favoriete team en spelers in actie te zien.
                 </p>
-                <P>
+                <P id="aboutText3">
                     Kortom, ik ben een gedreven student met een passie voor technologie, bedrijfsprocessen en sport. Ik streef er altijd naar om mezelf verder te ontwikkelen, zowel professioneel als persoonlijk, en ik geloof sterk in het stellen van doelen en het vinden van praktische oplossingen, zowel binnen als buiten de IT-wereld
                 </P>
 
@@ -43,87 +47,140 @@
         </section>
 
         <section id="skills">
-            <h2>Vaardigheden</h2>
-            <ul class="skills-list">
-                <li>
-                    <img src="/IMAGES/icon_JS.png" alt="HTML Icon">
-                    HTML, CSS, JavaScript
-                </li>
-                <li>
-                    <img src="/IMAGES/icon_java.png" alt="Java Icon">
-                    Java
-                </li>
-                <li>
-                    <img src="/IMAGES/icon_mySQL.png" alt="MySQL Icon">
-                    MySQL
-                </li>
-                <li>
-                    <img src="/IMAGES/icon_SAP.png" alt="SAP Icon">
-                    SAP, SAP4HANA
-                </li>
-                <li>
-                    <img src="/IMAGES/icon_XML.png" alt="XML Icon">
-                    XML, ABAP
-                </li>
-            </ul>
+            <h2 id="skillsTitle">Vaardigheden</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="/IMAGESWBG/HTML.png" alt="HTML Icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/CSS.png" alt="CSS Icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGES/icon_js.png" alt="JavaScript Icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/Icon java.png" alt="Java Icon">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/Icon SQL.png" alt="MySQL Icon">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/SAP4HANA.png" alt="SAP Icon">
+                    <p>SAP, SAP4HANA</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/XML.png" alt="XML Icon">
+                    <p>XML</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/ABAP.jpg" alt="ABAP Icon">
+                    <p>ABAP</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/Drupal.png" alt="Drupal Icon">
+                    <p>Drupal</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/SAPBTP.png" alt="BTP Icon">
+                    <p>BTP</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/NodeJS.png" alt="Node.js Icon">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill">
+                    <img src="/IMAGESWBG/SAPBuildApps.png" alt="SAPBuildApps">
+                    <p>SAP Buid Apps</p>
+                </div>
+            </div>
         </section>
-
+        
         <section id="projects">
-            <h2>Projecten</h2>
+            <h2 id="projectsTitle">Projecten</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="/IMAGES/splendor-game.jpg" alt="Splendor game" class="logo">
+                    <div class="project-content">
+                        <h3>Splendor game in Java</h3>
+                        <p id="splendorText">
+                            Een Splendor-spel ontwikkeld in Java, waarbij objectgeoriënteerd programmeren werd toegepast met een gebruiksvriendelijke interface.
+                        </p>
+                    </div>
+                </div>
             
-            <div class="project">
-                <h3>Splendor game in Java</h3>
-                <p>
-                    In het eerste jaar van mijn opleiding kregen we de uitdagende opdracht om een Splendor-spel te ontwikkelen in Java. Deze opdracht bood ons de kans om onze programmeervaardigheden in de praktijk te brengen en ons begrip van objectgeoriënteerd programmeren te verdiepen.
-                </p>
-                <p>
-                    De Splendor-game, die is geïnspireerd op het populaire bordspel, daagde ons uit om verschillende elementen zoals kaarten, edelstenen en spelersinteracties te implementeren. Het was een waardevolle ervaring die ons niet alleen leerde hoe we de spelmechanismen konden coderen, maar ook hoe we een gebruiksvriendelijke interface konden ontwerpen.
-                </p>
-                <p>
-                    Door samen te werken in teams konden we onze ideeën delen en van elkaar leren, wat de ontwikkeling van het project nog boeiender maakte. Het creëren van deze game stelde ons in staat om onze creativiteit en technische vaardigheden te combineren, wat resulteerde in een project waar we met trots op terugkijken.
-                </p>
-            </div>
-        
-            <div class="project">
-                <h3>
-                    Website Flexso
-                    <img src="/IMAGES/flexso-logo.png" alt="Flexso Logo" class="logo">
-                </h3>
-                <p>
-                    In het tweede jaar van mijn opleiding kregen we de opdracht om een website te ontwikkelen waar gebruikers zich konden registreren voor evenementen en bijbehorende sessies. Deze website hebben we gebouwd met behulp van <strong>XML</strong>, <strong>JavaScript</strong>, <strong>CSS</strong> en <strong>CAP CDS</strong>. Gebruikers konden inloggen, zich registreren, een overzicht van alle evenementen en sessies bekijken, feedback geven en zich inschrijven voor specifieke sessies.
-                </p>
-                <p>
-                    Onze website was ontworpen voor twee verschillende rollen: <strong>gebruikers</strong> en <strong>beheerders</strong>. Beheerders hadden aanzienlijk meer toegang tot de functionaliteiten van de site dan reguliere gebruikers. Zij konden de volledige website beheren, wat inhield dat ze gebruikersaccounts konden beheren, sessies en evenementen konden aanmaken, bewerken of verwijderen, feedback konden inzien en een overzicht konden krijgen van geregistreerde gebruikers per sessie.
-                </p>
-            </div>
-        
-            <div class="project">
-                <h3>Huidig Project: Boekingsite voor Knowledge on the Spot</h3>
-                <p>
-                    Momenteel ben ik bezig met het ontwikkelen van een geavanceerde boekingswebsite voor Knowledge on the Spot. Deze website is ontworpen om een gebruiksvriendelijke en efficiënte ervaring te bieden voor zowel klanten als beheerders.
-                </p>
-                <p>
-                    Het project richt zich op het creëren van een platform waar gebruikers eenvoudig evenementen kunnen ontdekken en hun deelname kunnen reserveren. Mijn doel is om een omgeving te creëren die niet alleen visueel aantrekkelijk is, maar ook functioneel en responsief.
-                </p>
-                <p>
-                    Tijdens dit project leer ik veel over het verbeteren van de gebruikerservaring, het implementeren van veilige registratie- en betalingssystemen, en het integreren van interactieve elementen. Ik streef ernaar een platform te ontwikkelen dat zowel aan de behoeften van de gebruikers voldoet als de administratieve processen voor de organisatie vereenvoudigt.
-                </p>
-            </div>
-        </section>                     
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Je kunt me bereiken via <a href="mailto:killian.neckebroeck@student.hogent.be">killian.neckebroeck@student.hogent.be</a>.</p>
-            <div class="button-container">
-                <a href="https://www.linkedin.com/in/killian-neckebroeck-43435130b/" target="_blank" class="button linkedin-button">Bekijk mijn LinkedIn</a>
-                <a href="/FILES/Curriculum Vitae Killian Neckebroeck.pdf" download class="button cv-button">Download mijn CV</a>
+                <div class="project">
+                    <img src="/IMAGES/flexso-logo.png" alt="Flexso Website" class="logo">
+                    <div class="project-content">
+                        <h3>Business Software Project - Flexso</h3>
+                        <p id="flexsoText">
+                            Een evenementenregistratieplatform ontwikkeld waarin gebruikers zich konden inschrijven voor sessies en beheerders volledige controle hadden.
+                        </p>
+                        <a href="https://github.com/flexso-hogent/P2BS_2324_Aalst" class="linkKOS">Bekijk Github</a>
+                    </div>
+                </div>
+            
+                <div class="project">
+                    <img src="/IMAGESWBG/SpotsOfKnowlodge.png" alt="Knowledge on the Spot" class="logo">
+                    <div class="project-content">
+                        <h3 id="titleSOK">Boekingsite Knowledge on the Spot</h3>
+                        <p>
+                            Een geavanceerde boekingswebsite gebouwd met Drupal, met een focus op een intuïtief en responsief ontwerp.
+                        </p>
+                        <a href="https://test-spotsofknowledge.pantheonsite.io/" class="linkKOS">Bekijk site</a>
+                    </div>
+                </div>
+            
+                <div class="project">
+                    <img src="/IMAGESWBG/SAPBuildApps.png" alt="SAP Build Apps" class="logo">
+                    <div class="project-content">
+                        <h3>SAP Build Apps</h3>
+                        <p>
+                            Een eenvoudige low-code applicatie met een eigen opgestelde API over F1-rijders. 
+                            De app toont een lijst met F1-rijders en biedt de mogelijkheid om details te bekijken, 
+                            nieuwe rijders toe te voegen of bestaande te verwijderen.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="project">
+                    <img src="/IMAGESWBG/SAP Fiori.png" alt="SAP Fiori App" class="logo">
+                    <div class="project-content">
+                        <h3>SAP Fiori App</h3>
+                        <p>
+                            Een SAP Fiori app waarin gebruikers een lijst van games kunnen bekijken, elk met een detailpagina. 
+                            Daarnaast biedt de app de mogelijkheid om favoriete games van studenten te beheren en 
+                            studenten aan te maken of te verwijderen.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
+                            
 
         <footer>
-            <p>&copy; 2024 Killian Neckebroeck</p>
-        </footer>
-
+            <div class="footer-container">
+                <p class="footer-text">
+                    Wil je samenwerken of gewoon een vraag stellen? Neem gerust contact op! 📩
+                </p>
+                <a href="mailto:killian.neckebroeck@student.hogent.be" class="email-button">
+                    Stuur een e-mail
+                </a>
+                <div class="button-container">
+                    <a href="https://www.linkedin.com/in/killian-neckebroeck-43435130b/" target="_blank" class="button linkedin-button">
+                        Bekijk mijn LinkedIn
+                    </a>
+                    <a href="/FILES/Curriculum Vitae Killian Neckebroeck.pdf" download class="button cv-button">
+                        Download mijn CV
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2024 Killian Neckebroeck | Alle rechten voorbehouden</p>
+        </footer>        
         <script src="script.js"></script>
     </body>
 </html>
