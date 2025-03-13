@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="/CSS/style.css">
         <!-- Favicon toevoegen -->
         <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.7/css/flag-icon.min.css">
+
+
     </head>
     <body>
         <header>
@@ -18,10 +22,14 @@
                     <li><a href="#projects" id="navProjects">Projecten</a></li>
                     <li><a href="#contact" id="navContact">Contact</a></li>
                 </ul>
-                <!-- <div class="language-switcher">
-                    <button class="lang-btn" onclick="changeLanguage('nl')">🇳🇱 NL</button>
-                    <button class="lang-btn" onclick="changeLanguage('en')">🇬🇧 ENG</button>
-                </div>                 -->
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="changeLanguage('nl')">
+                        <img src="/IMAGES/flag-nl.webp" alt="Dutch Flag"> NL
+                    </button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">
+                        <img src="/IMAGES/flag-uk.png" alt="UK Flag"> ENG
+                    </button>
+                </div>
             </nav>
         </header>
 
@@ -38,10 +46,10 @@
                 <P id="aboutText3">
                     Naast mijn passie voor IT en bedrijfsprocessen, ben ik ook iemand die veel tijd besteedt aan sport. Fitness speelt een belangrijke rol in mijn dagelijks leven. Ik geniet ervan om mezelf uit te dagen, doelen te stellen en steeds te verbeteren - een mentaliteit die ik ook meeneem in mijn werk en studie.
                 </P>
-                <p id="aboutText3">
+                <p id="aboutText4">
                     In mijn vrije tijd ben ik ook een fan van racegames, waarbij ik houd van de adrenaline en de uitdaging van precisie en snelheid. Daarnaast kijk ik graag naar Formule 1, waar ik de strategische aspecten van het racen bijzonder interessant vind. Ik volg ook voetbal met veel plezier, omdat het me ontspanning biedt en een manier is om mijn favoriete team en spelers in actie te zien.
                 </p>
-                <P id="aboutText3">
+                <P id="aboutText5">
                     Kortom, ik ben een gedreven student met een passie voor technologie, bedrijfsprocessen en sport. Ik streef er altijd naar om mezelf verder te ontwikkelen, zowel professioneel als persoonlijk, en ik geloof sterk in het stellen van doelen en het vinden van praktische oplossingen, zowel binnen als buiten de IT-wereld.
                 </P>
 
@@ -122,7 +130,7 @@
                         <p id="flexsoText">
                             Een evenementenregistratieplatform ontwikkeld waarin gebruikers zich konden inschrijven voor sessies en beheerders volledige controle hadden.
                         </p>
-                        <a href="https://github.com/flexso-hogent/P2BS_2324_Aalst" class="linkKOS">Bekijk Github</a>
+                        <a id="bekijkGithub" href="https://github.com/flexso-hogent/P2BS_2324_Aalst" class="linkKOS">Github</a>
                     </div>
                 </div>
             
@@ -130,10 +138,10 @@
                     <img src="/IMAGESWBG/SpotsOfKnowlodge.png" alt="Knowledge on the Spot" class="logo">
                     <div class="project-content">
                         <h3 id="titleSOK">Boekingsite Knowledge on the Spot</h3>
-                        <p>
+                        <p id="textSOK">
                             Een geavanceerde boekingswebsite gebouwd met Drupal, met een focus op een intuïtief en responsief ontwerp.
                         </p>
-                        <a href="https://test-spotsofknowledge.pantheonsite.io/" class="linkKOS">Bekijk site</a>
+                        <a id="bekijkSite" href="https://test-spotsofknowledge.pantheonsite.io/" class="linkKOS">Website</a>
                     </div>
                 </div>
             
@@ -141,10 +149,8 @@
                     <img src="/IMAGESWBG/SAPBuildApps.png" alt="SAP Build Apps" class="logo">
                     <div class="project-content">
                         <h3>SAP Build Apps</h3>
-                        <p>
-                            Een eenvoudige low-code applicatie met een eigen opgestelde API over F1-rijders. 
-                            De app toont een lijst met F1-rijders en biedt de mogelijkheid om details te bekijken, 
-                            nieuwe rijders toe te voegen of bestaande te verwijderen.
+                        <p id="SAPBuildAppsText">
+                            Een eenvoudige low-code applicatie met een eigen opgestelde API over F1-rijders. De app toont een lijst met F1-rijders en biedt de mogelijkheid om details te bekijken, nieuwe rijders toe te voegen of bestaande te verwijderen.
                         </p>
                     </div>
                 </div>
@@ -153,10 +159,8 @@
                     <img src="/IMAGESWBG/SAP Fiori.png" alt="SAP Fiori App" class="logo">
                     <div class="project-content">
                         <h3>SAP Fiori App</h3>
-                        <p>
-                            Een SAP Fiori app waarin gebruikers een lijst van games kunnen bekijken, elk met een detailpagina. 
-                            Daarnaast biedt de app de mogelijkheid om favoriete games van studenten te beheren en 
-                            studenten aan te maken of te verwijderen.
+                        <p id="SAPFioriAppText">
+                            Een SAP Fiori app waarin gebruikers een lijst van games kunnen bekijken, elk met een detailpagina. Daarnaast biedt de app de mogelijkheid om favoriete games van studenten te beheren en studenten aan te maken of te verwijderen.
                         </p>
                     </div>
                 </div>
@@ -182,7 +186,8 @@
                 </div>
             </div>
             <p class="footer-copy">&copy; 2024 Killian Neckebroeck | Alle rechten voorbehouden</p>
-        </footer>        
+        </footer>
+        <script src="translation.js"></script>        
         <script src="script.js"></script>
     </body>
 </html>
