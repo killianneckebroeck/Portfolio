@@ -40,3 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("selectedLanguage") || "nl"; // Standaard naar NL
     changeLanguage(savedLang);
 });
+
+function toggleMenu() {
+    let nav = document.querySelector("nav ul");
+    nav.classList.toggle("active");
+}
+

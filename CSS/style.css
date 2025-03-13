@@ -344,3 +344,158 @@ footer {
 }
 
 
+/* Navigatiebalk aanpassen voor mobiel */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Verberg standaard de navigatie op mobiel */
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Hamburger menu */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .language-switcher {
+        position: relative;
+        top: auto;
+        right: auto;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .lang-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .lang-btn img {
+        width: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolommen in plaats van 4 */
+    }
+
+    .skill img {
+        width: 60px; /* Iconen iets kleiner */
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr); /* Zet projecten onder elkaar */
+    }
+
+    .project {
+        min-height: auto; /* Zorgt ervoor dat projecten niet te lang worden */
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem; /* Titels iets kleiner */
+    }
+
+    .footer-text {
+        font-size: 1.2rem; /* Voorkomt dat footer te groot wordt */
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .email-button {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+    }
+
+    .linkedin-button, .cv-button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+
+/* Standaard verberg je het menu-icoon op desktop */
+.menu-icon {
+    display: none; /* Alleen zichtbaar op mobiel */
+}
+
+/* Toon het menu-icoon alleen als het scherm kleiner is dan 768px */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 26px;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: none; /* Standaard verbergen op mobiel */
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
