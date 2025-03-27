@@ -15,13 +15,14 @@
     <body>
         <header>
             <h1>Killian Neckebroeck</h1>
-            <nav>
+            <nav>        
                 <ul>
                     <li><a href="#about" id="navAbout">Over Mij</a></li>
                     <li><a href="#skills" id="navSkills">Vaardigheden</a></li>
                     <li><a href="#projects" id="navProjects">Projecten</a></li>
                     <li><a href="#contact" id="navContact">Contact</a></li>
                 </ul>
+        
                 <div class="language-switcher">
                     <button class="lang-btn" onclick="changeLanguage('nl')">
                         <img src="/IMAGES/flag-nl.webp" alt="Dutch Flag"> NL
@@ -29,10 +30,13 @@
                     <button class="lang-btn" onclick="changeLanguage('en')">
                         <img src="/IMAGES/flag-uk.png" alt="UK Flag"> ENG
                     </button>
-                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </nav>
         </header>
+        
 
         <section id="about">
             <h2 id="aboutTitle">Over Mij</h2>

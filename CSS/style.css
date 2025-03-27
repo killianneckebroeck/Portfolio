@@ -473,13 +473,18 @@ footer {
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
-        cursor: pointer;
-        font-size: 26px;
-        color: white;
         position: absolute;
         right: 20px;
         top: 15px;
+        font-size: 26px;
+        color: white;
         z-index: 1000;
+    }
+
+    .language-switcher {
+        position: relative;
+        margin-top: 10px; /* ← voeg ruimte toe onder hamburger */
+        justify-content: center;
     }
 
     nav ul {
@@ -496,6 +501,7 @@ footer {
 
     nav ul.active {
         display: flex;
+        margin-top: 60px;
     }
 
     nav ul li {

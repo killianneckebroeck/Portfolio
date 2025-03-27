@@ -44,5 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleMenu() {
     let nav = document.querySelector("nav ul");
     nav.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
 }
 
+// script.js uitbreiden:
+document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.querySelector("nav ul").classList.remove("active");
+    });
+});
+  
